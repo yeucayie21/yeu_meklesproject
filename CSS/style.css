@@ -1,0 +1,382 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.banner .background-image {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/images/Rectangle 25.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+.banner .background-image .overlay {
+  background: rgba(0, 0, 0, 0.205);
+  width: 100%;
+}
+.banner .background-image .mobile-nav {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner .background-image .hamburger {
+  border: 2px solid brown;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.banner .background-image .hamburger .line {
+  height: 2px;
+  width: 70%;
+  background: brown;
+}
+.banner .background-image .pc-nav {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.container .row {
+  padding-top: 5%;
+  display: flex-end;
+  flex-direction: row;
+}
+.container .row .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  justify-content: space-around;
+  height: 125%;
+}
+.container .row .left {
+  height: 80vh;
+  background-image: url("../images/images/Rectangle 14.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20%;
+}
+.container .row .left .box {
+  display: flex;
+  height: 30%;
+  width: 30%;
+  background: maroon;
+  border: 3px solid white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.container .right {
+  flex-direction: column;
+  justify-content: center;
+}
+.container .right h2 {
+  color: maroon;
+}
+.container .right .btn {
+  background: transparent;
+  color: maroon;
+  border: 3px solid maroon;
+  padding: 10px 25px;
+}
+
+.projects .container {
+  justify-content: center;
+}
+.projects .container .row .left {
+  height: 50vh;
+  background: maroon;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+.projects .container .row .right .snap {
+  color: white;
+  text-align: baseline;
+  justify-content: end;
+  display: flex;
+  justify-self: center;
+}
+.projects .container .row .right .snap .img1 {
+  background-image: url("../images/images/Rectangle 24.jpg");
+  height: 25vh;
+  width: 25vh;
+  background-size: cover;
+  background-position: center;
+}
+.projects .container .row .right .snap .img2 {
+  background-image: url("../images/images/Rectangle 20.jpg");
+  height: 25vh;
+  width: 25vh;
+  background-size: cover;
+  background-position: center;
+}
+.projects .container .row .right .snap .img3 {
+  background-image: url("../images/images/Rectangle 23.jpg");
+  height: 25vh;
+  width: 25vh;
+  background-size: cover;
+  background-position: center;
+}
+.projects .container .row .right .snap .img4 {
+  background-image: url("../images/images/Rectangle 21.jpg");
+  height: 25vh;
+  width: 25vh;
+  background-size: cover;
+  background-position: center;
+}
+.projects .container .row .right .snap .img5 {
+  background-image: url("../images/images/Rectangle 14.jpg");
+  height: 25vh;
+  width: 25vh;
+  background-size: cover;
+  background-position: center;
+}
+.projects .container .row .right .snap .img6 {
+  background-image: url("../images/images/Rectangle 22.jpg");
+  height: 25vh;
+  width: 25vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.donate .background {
+  height: 80vh;
+  background-image: url("../images/images/pexels-cdc-3992949 1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.donate .background .overlay {
+  background: rgba(0, 0, 0, 0.247);
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+.donate .background .overlay .row .btr {
+  display: flex;
+  flex-direction: row;
+}
+.donate .background h3 {
+  color: white;
+  padding-bottom: 50px;
+}
+.donate .background form input {
+  width: 60%;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  height: 40px;
+}
+.donate .background button {
+  background: maroon;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.yeu {
+  display: flex;
+  border: 3px solid maroon;
+  flex-direction: column;
+  width: 60%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsibility {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+.responsibility .responsibilities {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+  border: 2px solid maroon;
+  padding: 3rem;
+}
+
+.ftr {
+  background-color: brown;
+  color: #fff;
+  margin-top: 4%;
+}
+.ftr .circle {
+  display: flex;
+  justify-content: space-between;
+}
+.ftr .circle .round {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.ftr .circle .round .dot {
+  margin-bottom: 4px;
+  width: 14px;
+  height: 14px;
+  background-color: black;
+  border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.links li, .links h3 {
+  padding-left: 10vh;
+}
+
+span {
+  text-decoration: underline;
+}
+
+.imagez {
+  display: flex;
+  gap: 10px;
+}
+.imagez img {
+  height: 90px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner {
+    background-image: url("../images/images/Rectangle.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .banner .mobile-nav {
+    display: none !important;
+  }
+  .banner .nav-container {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .banner .nav-container .pc-nav {
+    display: flex;
+    width: 65%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+    background-color: white;
+  }
+  .banner .nav-container .pc-nav .nav-icons {
+    height: 70px;
+    width: 70px;
+    background: maroon;
+  }
+  .banner .nav-container .pc-nav .center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .banner .nav-container .pc-nav .center ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    color: maroon;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
