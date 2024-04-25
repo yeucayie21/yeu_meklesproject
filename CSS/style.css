@@ -55,34 +55,34 @@ table {
 body {
   overflow-x: hidden;
 }
-.pc-nav{
+
+.pc-nav {
   display: none;
 }
 
-.banner{
-  
-    height: 100vh;
-    width: 100%;
-    background-image: url("../images/images/Rectangle\ 21.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
+.banner .background-image {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/images/Rectangle 25.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
 }
-.banner .overlay {
+.banner .background-image .overlay {
   background: rgba(0, 0, 0, 0.205);
   width: 100%;
 }
-.banner .mobile-nav {
+.banner .background-image .mobile-nav {
+  display: block;
   padding: 10px;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
 }
-.banner .hamburger {
+.banner .background-image .hamburger {
   border: 2px solid brown;
   height: 4rem;
   width: 4rem;
@@ -92,12 +92,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-.banner .hamburger .line {
+.banner .background-image .hamburger .line {
   height: 2px;
   width: 70%;
   background: brown;
 }
-.banner .pc-nav {
+.banner .background-image .pc-nav {
   display: none;
 }
 
@@ -151,10 +151,15 @@ body {
 }
 
 .projects .container {
+  height: 60vh;
+  background-color: maroon;
   justify-content: center;
 }
+.projects .container .row {
+  height: 100%;
+}
 .projects .container .row .left {
-  height: 50vh;
+  height: 100%;
   background: maroon;
   color: white;
   display: flex;
@@ -174,6 +179,9 @@ body {
   width: 25vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 .projects .container .row .right .snap .img2 {
   background-image: url("../images/images/Rectangle 20.jpg");
@@ -212,6 +220,7 @@ body {
 }
 
 .donate .background {
+  margin-top: 10vh;
   height: 80vh;
   background-image: url("../images/images/pexels-cdc-3992949 1.jpg");
   background-position: center;
@@ -310,11 +319,11 @@ span {
   text-decoration: underline;
 }
 
-.imagez {
+.images {
   display: flex;
   gap: 10px;
 }
-.imagez img {
+.images img {
   height: 90px;
 }
 
@@ -337,7 +346,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 @media (min-width: 992px) {
   .banner {
     background-image: url("../images/images/Rectangle.jpg");
-    height: 50vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

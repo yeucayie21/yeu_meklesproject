@@ -52,6 +52,10 @@ table {
 body{
     overflow-x: hidden;
 }
+.pc-nav
+{
+    display: none;
+}
 .banner{
     .background-image{
         height: 100vh;
@@ -68,6 +72,7 @@ body{
             width: 100%;
         }
     .mobile-nav{
+        display: block;
         padding: 10px;
         display: flex;
         width: 100%;
@@ -159,17 +164,21 @@ body{
 
 }.projects{
     .container{
-        
+        height: 60vh;
+        background-color: maroon;
         justify-content: center;
+        // padding-top: -230px;
         .row{
+            height: 100%;
            .left{
-            height: 50vh;
+            height: 100%;
             background: maroon;
             color: white;
             display: flex;
             flex-direction: column;
             justify-self: center;
            } 
+        
            .right{
            .snap{
             color: white;
@@ -184,6 +193,9 @@ body{
                 width: 25vh;
                 background-size: cover;
                 background-position: center;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
             }
             .img2{
 
@@ -233,6 +245,7 @@ body{
 }
 .donate{
     .background{
+        margin-top: 10vh;
         height: 80vh;
         background-image: url("../images/images/pexels-cdc-3992949\ 1.jpg");
         background-position: center;
@@ -339,7 +352,7 @@ body{
         text-decoration: underline;
 
     }
-    .imagez{
+    .images{
         display: flex;
         gap: 10px;
         img{
@@ -390,7 +403,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 @media (min-width: 992px) { 
     .banner{
         background-image: url("../images/images/Rectangle.jpg");
-        height: 50vh;
+        height: 100vh;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
