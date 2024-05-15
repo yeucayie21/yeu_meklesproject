@@ -60,7 +60,7 @@ body {
   display: none;
 }
 
-.banner .background-image {
+.BANNER .background-image {
   height: 100vh;
   width: 100%;
   background-image: url("../images/images/Rectangle 25.jpg");
@@ -70,11 +70,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.banner .background-image .overlay {
+.BANNER .background-image .overlay {
   background: rgba(0, 0, 0, 0.205);
   width: 100%;
 }
-.banner .background-image .mobile-nav {
+.BANNER .background-image .mobile-nav {
   display: block;
   padding: 10px;
   display: flex;
@@ -82,7 +82,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.banner .background-image .hamburger {
+.BANNER .background-image .hamburger {
   border: 2px solid brown;
   height: 4rem;
   width: 4rem;
@@ -92,12 +92,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-.banner .background-image .hamburger .line {
+.BANNER .background-image .hamburger .line {
   height: 2px;
   width: 70%;
   background: brown;
 }
-.banner .background-image .pc-nav {
+.BANNER .background-image .pc-nav {
   display: none;
 }
 
@@ -295,7 +295,7 @@ body {
   align-items: center;
 }
 .ftr .circle .round .dot {
-  margin-bottom: 4px;
+  margin-bottom: 41px;
   width: 14px;
   height: 14px;
   background-color: black;
@@ -344,23 +344,23 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .banner {
+  .BANNER {
     background-image: url("../images/images/Rectangle.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
-  .banner .mobile-nav {
+  .BANNER .mobile-nav {
     display: none !important;
   }
-  .banner .nav-container {
+  .BANNER .nav-container {
     padding-top: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .banner .nav-container .pc-nav {
+  .BANNER .nav-container .pc-nav {
     display: flex;
     width: 65%;
     display: flex;
@@ -368,17 +368,17 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     justify-content: space-around;
     background-color: white;
   }
-  .banner .nav-container .pc-nav .nav-icons {
+  .BANNER .nav-container .pc-nav .nav-icons {
     height: 70px;
     width: 70px;
     background: maroon;
   }
-  .banner .nav-container .pc-nav .center {
+  .BANNER .nav-container .pc-nav .center {
     display: flex;
     justify-content: center;
     text-align: center;
   }
-  .banner .nav-container .pc-nav .center ul {
+  .BANNER .nav-container .pc-nav .center ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;

@@ -56,7 +56,7 @@ body{
 {
     display: none;
 }
-.banner{
+.BANNER{
     .background-image{
         height: 100vh;
         width: 100%;
@@ -401,7 +401,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    .banner{
+    .BANNER{
         background-image: url("../images/images/Rectangle.jpg");
         height: 100vh;
         background-size: cover;
